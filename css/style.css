@@ -1,0 +1,46 @@
+.brand {
+    width: 33%;
+    margin-left: 40%;
+}
+
+.slide#responsive1 .info {
+    position: absolute;
+    top: 170px;
+    right: 18%;
+    width: 25%;
+}
+.slide#responsive1 .info h2 {
+    color: #fff;
+    font-size: 47px;
+    font-weight: normal;
+    text-shadow: 1px 1px 1px #3b3262;
+    line-height: 56px;
+}
+.slide#responsive1 .info h2 strong {
+    font-size: 42px;
+}
+
+#maps {
+    margin-left: 45%;
+    margin-bottom: 13%;
+}
+
+.motto {
+    font-family: sans-serif; 
+    text-align: center;
+}
+
+#ddtitle {
+    width: 100%;
+    background-color: url;
+    text-align: center;
+    
+}
+
+.title_header h2 {
+    color: #ffffff;
+}
+
+#asset1 {
+    display: inline-block;
+}
