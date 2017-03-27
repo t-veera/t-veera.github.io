@@ -44,3 +44,24 @@
 #asset1 {
     display: inline-block;
 }
+
+
+#sign_in2 .form input[type="submit"]
+{
+    color: #fff;
+    background: #520135;
+    font-size: 20px;
+    margin: 0;
+    display: block;
+    padding: 10px;
+    border: 0 none;
+    border-radius: 3px;
+    -webkit-transition: background linear .2s, box-shadow linear .2s;
+    -moz-transition: background linear .2s, box-shadow linear .2s;
+    -o-transition: background linear .2s, box-shadow linear .2s;
+    transition: background linear .2s, box-shadow linear .2s;
+}
+
+#sign_in2 .form input[type="submit"]:hover{
+    background: #187CCC;
+}
