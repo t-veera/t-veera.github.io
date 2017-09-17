@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <title>Modal Login Window Demo</title>
+  <link rel="shortcut icon" href="http://designshack.net/favicon.ico">
+  <link rel="icon" href="http://designshack.net/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="mstyle.css">
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery.leanModal.min.js"></script>
+  <!-- jQuery plugin leanModal under MIT License http://leanmodal.finelysliced.com.au/ -->
+</head>
+
+<body>
+  <div id="topbar"><a href="http://designshack.net">Back to Design Shack</a></div>
+  <div id="w">
+    <div id="content">
+      <h1>Welcome to the Site!</h1>
+      <p>Just click the login link below to expand the modal window. This is only a demo so the input form will not load anything, but it is easy to connect into a backend system.</p>
+      <center><a href="#loginmodal" class="flatbtn" id="modaltrigger">Modal Login</a></center>
+    </div>
+  </div>
+  <div id="loginmodal" style="display:none;">
+    <h1>Get Estimate</h1>
+    <form id="loginform" name="loginform" method="post" action="index.html">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" class="txtfield" tabindex="1">
+      
+      <label for="phone number">Phone Number:</label>
+      <input type="number" name="phone number" id="phone number" class="txtfield" tabindex="2">
+        
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" class="txtfield" tabindex="3">
+        
+      <label for="email">Address:</label>
+      <input type="text" name="address" id="address" class="txtfield" tabindex="4">
+        
+      <label for="email">Distance From Address to Farm:</label>
+      <input type="text" name="distance" id="distancea2f" class="txtfield" tabindex="5">
+        
+      <label for="email">Nearest Town to Farm:</label>
+      <input type="text" name="nearest town" id="distancet2f" class="txtfield" tabindex="6">
+        
+      <label for="email">Farm Area (acres):</label>
+      <input type="text" name="farm area" id="farmarea" class="txtfield" tabindex="7">
+      
+      <div class="center"><input type="submit" name="loginbtn" id="loginbtn" class="flatbtn-blu hidemodal" value="Send" tabindex="3"></div>
+    </form>
+  </div>
+<script type="text/javascript">
+$(function(){
+  $('#loginform').submit(function(e){
+    return false;
+  });
+  
+  $('#modaltrigger').leanModal({ top: 110, overlay: 0.45, closeButton: ".hidemodal" });
+});
+</script>
+</body>
+</html>
